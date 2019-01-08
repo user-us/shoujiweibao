@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font/demo.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<section id="choose_box" class="hui_bg">
+	<!--头部开始-->
+	<header>
+		<a href="" class="headleft"><i class="icon iconfont icon-fanhui"></i></a>投诉
+	</header>
+	<div class="zhanwei"></div>
+	<!--头部结束-->
+	<div class="choose_address">
+		<select>
+			<option>省</option>
+		</select>
+		<select>
+			<option>市</option>
+		</select>
+		<select>
+			<option>地区</option>
+		</select>
+	</div>
+	<div class="choose_list">
+		<dl class="active">
+			<dt>
+				<i class="icon iconfont icon-danxuankuang-xuanzhong"></i>某某某检测店 
+				<span class="fasong_tel"><i class="icon iconfont icon-send"></i>发送到手机</span>
+			</dt>
+			<dd>浙江省杭州市西湖区华星路8号中国计量学院青工楼一层自西向东A1-2号</dd>
+		</dl>
+		<dl>
+			<dt>
+				<i class="icon iconfont icon-danxuankuang-xuanzhong"></i>某某某检测店 
+				<span class="fasong_tel"><i class="icon iconfont icon-send"></i>发送到手机</span>
+			</dt>
+			<dd>浙江省杭州市西湖区华星路8号中国计量学院青工楼一层自西向东A1-2号</dd>
+		</dl>
+		<dl>
+			<dt>
+				<i class="icon iconfont icon-danxuankuang-xuanzhong"></i>某某某检测店 
+				<span class="fasong_tel"><i class="icon iconfont icon-send"></i>发送到手机</span>
+			</dt>
+			<dd>浙江省杭州市西湖区华星路8号中国计量学院青工楼一层自西向东A1-2号</dd>
+		</dl>
+		<dl>
+			<dt>
+				<i class="icon iconfont icon-danxuankuang-xuanzhong"></i>某某某检测店 
+				<span class="fasong_tel"><i class="icon iconfont icon-send"></i>发送到手机</span>
+			</dt>
+			<dd>浙江省杭州市西湖区华星路8号中国计量学院青工楼一层自西向东A1-2号</dd>
+		</dl>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript">
+		$('.choose_list dl').click(function () {
+			$(this).addClass('active').siblings().removeClass('active');
+		})
+	</script>
+</section>
+</body>
+</html>

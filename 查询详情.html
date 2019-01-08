@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<section class="search_con1">
+		<header>
+			<a href="" class="headleft"><i class="icon iconfont icon-fanhui"></i></a>查询详情
+		</header>
+		<div class="zhanwei"></div>
+		<!--头部结束-->
+		<!--内容开始-->
+		<div class="search1">
+			<p class="fuwu1">服务项目1</p>
+			<div class="searcon">
+				<p><label>服务内容</label><span>免费换屏服务</span></p>
+				<p><label>服务开始日期</label><span>2018-11-22</span></p>
+				<p><label>服务开始日期</label><span>2019-11-22</span></p>
+				<p><label>保障剩余天数</label><span>10个月6天/span></p>
+				<p><label>受益人</label><span>李苗苗</span></p>
+				<p><label>设备品牌</label><span>OPPO</span></p>
+				<p><label>设备型号</label><span>DVGB0212</span></p>
+				<p><label>设备颜色</label><span>白色</span></p>
+				<p><label>内存容量</label><span>16G</span></p>
+				<p><label>IMEI</label><span>12262622221354</span></p>
+				<p><label>IMEI2</label><span></span></p>
+				<p><label>SN</label><span>无</span></p>
+				<p><label>激活/购机日期</label><span>2018-11-22</span></p>
+			</div>
+			<div class="yanchang"><a href="javascript:void(0);">延长服务期限</a></div>
+			<p class="fuwu1">设备历史信息记录</p>
+			<ul class="hisli">
+				<li><a href=""><small>1.某某某情况情况</small><span>2018-12-26<i class="icon iconfont icon-iconfontjiantou5"></i></span></a></li>
+				<li><a href=""><small>2.某某某情况情况</small><span>2018-12-26<i class="icon iconfont icon-iconfontjiantou5"></i></span></a></li>
+				<li><a href=""><small>3.某某某情况情况</small><span>2018-12-26<i class="icon iconfont icon-iconfontjiantou5"></i></span></a></li>
+			</ul>
+		</div>
+		<!--内容结束-->
+		<!--弹出-->
+		<div class="half"></div>
+		<div class="dialog">
+		    <div class="disacn">
+		    	<p class="youhu"><img src="images/money.png" class="youimg1"/>6个月<span>￥50.00</span></p>
+		    	<p class="youhu"><img src="images/money.png" class="youimg1"/>9个月<span>￥80.00</span></p>
+		    	<p class="youhu"><img src="images/money.png" class="youimg1"/>12个月<span>￥100.00</span></p>
+		    </div>
+		    <p class="close"><i class="icon iconfont icon-Group-"></i></p>
+		</div>
+	   <script type="text/javascript">
+		$(function(){
+			  $(".yanchang").click(function(){
+		      var length=document.documentElement.scrollTop;
+		      $(".dialog").show();
+			  $(".half").show().css("height",$(document).height());	 
+		      })   
+		      $(".close").click(function(){$(".dialog").hide();$(".half").hide();});   
+		})
+		</script>
+	</section>
+	<!--弹出-->
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

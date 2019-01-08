@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="toTop" content="true">
+    <meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi ">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="font/demo.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/ydui.css?rev=@@hash"/>
+    <link rel="stylesheet" href="css/demo.css"/>
+    <script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/ydui.flexible.js"></script>
+</head>
+<body>
+	<!--头部开始-->
+	<header>
+		<a href="" class="headleft"><i class="icon iconfont icon-fanhui"></i></a>所在地区
+	</header>
+	<!--头部结束-->
+	<!--内容开始-->
+	<section class="g-flexview">
+    <section class="g-scrollview">
+        <div class="m-cell">
+            <div class="cell-item">
+                <div class="cell-right cell-arrow">
+                    <input type="text" class="cell-input" readonly id="J_Address" value="" placeholder="请选择所在地区">
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
+
+</section>
+
+<script src="js/ydui.citys.js"></script>
+<script src="js/ydui.js"></script>
+<script>
+    /**
+     * 默认调用
+     */
+    !function () {
+        var $target = $('#J_Address');
+
+        $target.citySelect();
+
+        $target.on('click', function (event) {
+            event.stopPropagation();
+            $target.citySelect('open');
+        });
+
+        $target.on('done.ydui.cityselect', function (ret) {
+        	console.log(ret)
+            $(this).val(ret.country + ' ' + ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();
+    /**
+     * 设置默认值
+     */
+    !function () {
+        var $target = $('#J_Address2');
+
+        $target.citySelect({
+        	country: '中国',
+            provance: '新疆维吾尔自治区',
+            city: '乌鲁木齐市',
+            area: '天山区',
+            id: '1-31-330-3033'
+        });
+
+        $target.on('click', function (event) {
+            event.stopPropagation();
+            $target.citySelect('open');
+        });
+
+        $target.on('done.ydui.cityselect', function (ret) {
+        	console.log(ret);
+            $(this).val(ret.country + ' ' + ret.provance + ' ' + ret.city + ' ' + ret.area);
+        });
+    }();
+</script>
+	<!--内容结束-->
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
